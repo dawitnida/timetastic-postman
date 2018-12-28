@@ -3,6 +3,8 @@ Postman Collection + Environment for [Timetastic API][timetastic-api], a placeho
 Collections (not owned by Timetastic).
 Please follow this tutorial to import this [Postman Collection][pm-collection].
 
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://documenter.getpostman.com/view/2954555/Rzn9uMiX)
+
 ![Timetastic](media/timetastic-api-postman-collection.png)
 
 ## DONE
