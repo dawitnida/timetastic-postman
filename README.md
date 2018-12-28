@@ -9,9 +9,9 @@ Please follow this tutorial to import this [Postman Collection][pm-collection].
 - [x] Export Timetastic Swagger JSON to Postman
 - [x] Modify endpoints to work with environment variables
 - [x] Add all endpoints for each categories (Departments, users, holidays, public holidays, leave types and organisation)
+- [x] Add environment variables
 
 ## TODOs
-- [ ] Add environment variables
 - [ ] Split endpoints which have filters
 - [ ] Add more examples for error response
 
