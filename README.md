@@ -8,19 +8,23 @@ Please follow this tutorial to import this [Postman Collection][pm-collection].
 ![Timetastic](media/timetastic-api-postman-collection.png)
 
 ## DONE
-- [x] Export Timetastic Swagger JSON to Postman
-- [x] Modify endpoints to work with environment variables
-- [x] Add all endpoints for each categories (Departments, users, holidays, public holidays, leave types and organisation)
+- [x] Add all endpoints for each categories 
+    - Departments
+    - Users
+    - Holidays
+    - Public holidays
+    - Leave types and 
+    - Organisation
 - [x] Add environment variables
+- [x] Test and save response examples to the collection
+    - Organisation endpoint seems to be broken. [Timetastic][timetastic] please check.
 
 ## TODOs
 - [ ] Split endpoints which have filters
 - [ ] Add more examples for error response
 
-
 ## Author
 [Dawit Nida](https://github.com/dawitnida)
-
 
 [timetastic]: <https://app.timetastic.co.uk>
 [timetastic-api]: <https://app.timetastic.co.uk/apidocs>
