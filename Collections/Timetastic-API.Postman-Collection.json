@@ -1,0 +1,2279 @@
+{
+  "info": {
+    "_postman_id": "5a6bb052-8c38-4309-b286-20417750927b",
+    "name": "Timetastic API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Organisation",
+      "item": [
+        {
+          "name": "Get an organisation",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer  {{devApiToken}}",
+                "type": "text"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/organisation",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "organisation"
+              ]
+            },
+            "description": "Get the details of your organisation."
+          },
+          "response": []
+        },
+        {
+          "name": "Update an organisation",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{devApiToken}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json-patch+json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/organisation",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "organisation"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Departments",
+      "item": [
+        {
+          "name": "Get a list of departments",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer  {{devApiToken}}",
+                "type": "text"
+              },
+              {
+                "key": "Accept",
+                "value": "text/plain, application/json, text/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/departments",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "departments"
+              ]
+            },
+            "description": "Get a collection of departments for your organisation."
+          },
+          "response": [
+            {
+              "name": "Get a list of departments",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/plain, application/json, text/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer  {{devApiToken}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/departments",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "departments"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "JSON",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Thu, 27 Dec 2018 23:54:32 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "CF-RAY",
+                  "value": "48ffb6809ab45b5d-HEL"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self' gap:; connect-src *; frame-src 'self' gap: https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://widget.reviews.co.uk https://use.typekit.net https://*.linkedin.com https://platform.twitter.com https://www.linkedin.com https://js.stripe.com https://js-agent.newrelic.com https://bam.nr-data.net https://assets.customer.io https://www.google-analytics.com https://www.googleadservices.com https://az416426.vo.msecnd.net https://timetasticcore.azurewebsites.net https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com https://widget.reviews.co.uk; img-src * data: blob:; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://widget.reviews.co.uk https://use.typekit.net https://*.linkedin.com https://platform.twitter.com https://www.linkedin.com https://js.stripe.com https://js-agent.newrelic.com https://bam.nr-data.net https://assets.customer.io https://www.google-analytics.com https://www.googleadservices.com https://az416426.vo.msecnd.net https://timetasticcore.azurewebsites.net https://cdn.jsdelivr.net; font-src * data:"
+                },
+                {
+                  "key": "Expect-CT",
+                  "value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Request-Context",
+                  "value": "appId=cid-v1:2642d159-2ce2-40c9-af2b-3d0a875cb881"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "X-Rate-Limit-Limit",
+                  "value": "1s"
+                },
+                {
+                  "key": "X-Rate-Limit-Remaining",
+                  "value": "4"
+                },
+                {
+                  "key": "X-Rate-Limit-Reset",
+                  "value": "2018-12-27T23:54:33.4387465Z"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1"
+                },
+                {
+                  "key": "Server",
+                  "value": "cloudflare"
+                }
+              ],
+              "cookie": [],
+              "body": "[{\"id\":111253,\"organisationId\":56093,\"name\":\"Customer Success\",\"bossId\":425963,\"createdAt\":\"0001-01-01T00:00:00\",\"updatedAt\":\"0001-01-01T00:00:00\",\"givePublicHolidays\":false,\"archived\":false,\"countryCode\":\"\",\"userCount\":1,\"currentAllowance\":22.0,\"nextAllowance\":21.0,\"maxOff\":4,\"bankHolidaySetId\":0},{\"id\":111247,\"organisationId\":56093,\"name\":\"Developers\",\"bossId\":425955,\"createdAt\":\"0001-01-01T00:00:00\",\"updatedAt\":\"0001-01-01T00:00:00\",\"givePublicHolidays\":false,\"archived\":false,\"countryCode\":\"\",\"userCount\":1,\"currentAllowance\":25.0,\"nextAllowance\":25.0,\"maxOff\":4,\"bankHolidaySetId\":0},{\"id\":111248,\"organisationId\":56093,\"name\":\"DevOps\",\"bossId\":425954,\"createdAt\":\"0001-01-01T00:00:00\",\"updatedAt\":\"0001-01-01T00:00:00\",\"givePublicHolidays\":false,\"archived\":false,\"countryCode\":\"\",\"userCount\":2,\"currentAllowance\":22.0,\"nextAllowance\":25.0,\"maxOff\":0,\"bankHolidaySetId\":0},{\"id\":111250,\"organisationId\":56093,\"name\":\"Sales \\u0026 Marketing\",\"bossId\":425958,\"createdAt\":\"0001-01-01T00:00:00\",\"updatedAt\":\"0001-01-01T00:00:00\",\"givePublicHolidays\":false,\"archived\":false,\"countryCode\":\"\",\"userCount\":1,\"currentAllowance\":25.0,\"nextAllowance\":25.0,\"maxOff\":3,\"bankHolidaySetId\":0}]"
+            }
+          ]
+        },
+        {
+          "name": "Get a department",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{devApiToken}}",
+                "type": "text"
+              },
+              {
+                "key": "Accept",
+                "value": "text/plain, application/json, text/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/departments/{{departmentId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "departments",
+                "{{departmentId}}"
+              ]
+            },
+            "description": "Gets a department using the ID passed."
+          },
+          "response": [
+            {
+              "name": "Get a department",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{devApiToken}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "text/plain, application/json, text/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/departments/{{departmentId}}",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "departments",
+                    "{{departmentId}}"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "JSON",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Thu, 27 Dec 2018 23:56:30 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "CF-RAY",
+                  "value": "48ffb95effd65b5d-HEL"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self' gap:; connect-src *; frame-src 'self' gap: https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://widget.reviews.co.uk https://use.typekit.net https://*.linkedin.com https://platform.twitter.com https://www.linkedin.com https://js.stripe.com https://js-agent.newrelic.com https://bam.nr-data.net https://assets.customer.io https://www.google-analytics.com https://www.googleadservices.com https://az416426.vo.msecnd.net https://timetasticcore.azurewebsites.net https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com https://widget.reviews.co.uk; img-src * data: blob:; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://widget.reviews.co.uk https://use.typekit.net https://*.linkedin.com https://platform.twitter.com https://www.linkedin.com https://js.stripe.com https://js-agent.newrelic.com https://bam.nr-data.net https://assets.customer.io https://www.google-analytics.com https://www.googleadservices.com https://az416426.vo.msecnd.net https://timetasticcore.azurewebsites.net https://cdn.jsdelivr.net; font-src * data:"
+                },
+                {
+                  "key": "Expect-CT",
+                  "value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Request-Context",
+                  "value": "appId=cid-v1:2642d159-2ce2-40c9-af2b-3d0a875cb881"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "X-Rate-Limit-Limit",
+                  "value": "1s"
+                },
+                {
+                  "key": "X-Rate-Limit-Remaining",
+                  "value": "4"
+                },
+                {
+                  "key": "X-Rate-Limit-Reset",
+                  "value": "2018-12-27T23:56:31.0428357Z"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1"
+                },
+                {
+                  "key": "Server",
+                  "value": "cloudflare"
+                }
+              ],
+              "cookie": [],
+              "body": "{\"id\":111248,\"organisationId\":56093,\"name\":\"DevOps\",\"bossId\":425954,\"createdAt\":\"0001-01-01T00:00:00\",\"updatedAt\":\"0001-01-01T00:00:00\",\"givePublicHolidays\":false,\"archived\":false,\"countryCode\":\"\",\"userCount\":2,\"currentAllowance\":22.0,\"nextAllowance\":25.0,\"maxOff\":3,\"bankHolidaySetId\":0}"
+            }
+          ]
+        }
+      ],
+      "description": "Get a collection of departments for your organisation."
+    },
+    {
+      "name": "Users",
+      "item": [
+        {
+          "name": "Get a collection of users",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{devApiToken}}",
+                "type": "text"
+              },
+              {
+                "key": "Accept",
+                "value": "text/plain, application/json, text/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/users",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "users"
+              ]
+            },
+            "description": "Get a collection of users for your organisation, optionally filtered by a department.\n\n```\n?departmentId={{departmentId}}&includeArchivedUsers={{includeArchivedUsers}}&onlyShowArchivedUsers={{onlyShowArchivedUsers}}\n```"
+          },
+          "response": [
+            {
+              "name": "Get a collection of users",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{devApiToken}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "text/plain, application/json, text/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/users",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "users"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "JSON",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Thu, 27 Dec 2018 23:58:39 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "CF-RAY",
+                  "value": "48ffbc856b355b5d-HEL"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self' gap:; connect-src *; frame-src 'self' gap: https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://widget.reviews.co.uk https://use.typekit.net https://*.linkedin.com https://platform.twitter.com https://www.linkedin.com https://js.stripe.com https://js-agent.newrelic.com https://bam.nr-data.net https://assets.customer.io https://www.google-analytics.com https://www.googleadservices.com https://az416426.vo.msecnd.net https://timetasticcore.azurewebsites.net https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com https://widget.reviews.co.uk; img-src * data: blob:; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://widget.reviews.co.uk https://use.typekit.net https://*.linkedin.com https://platform.twitter.com https://www.linkedin.com https://js.stripe.com https://js-agent.newrelic.com https://bam.nr-data.net https://assets.customer.io https://www.google-analytics.com https://www.googleadservices.com https://az416426.vo.msecnd.net https://timetasticcore.azurewebsites.net https://cdn.jsdelivr.net; font-src * data:"
+                },
+                {
+                  "key": "Expect-CT",
+                  "value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Request-Context",
+                  "value": "appId=cid-v1:2642d159-2ce2-40c9-af2b-3d0a875cb881"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "X-Rate-Limit-Limit",
+                  "value": "1s"
+                },
+                {
+                  "key": "X-Rate-Limit-Remaining",
+                  "value": "4"
+                },
+                {
+                  "key": "X-Rate-Limit-Reset",
+                  "value": "2018-12-27T23:58:40.0788334Z"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1"
+                },
+                {
+                  "key": "Server",
+                  "value": "cloudflare"
+                }
+              ],
+              "cookie": [],
+              "body": "[{\"id\":425954,\"firstname\":\"Dawit\",\"surname\":\"Nida\",\"email\":\"dawit@dawitnida.com\",\"admin\":true,\"organisationId\":56093,\"departmentId\":111248,\"allowanceUnit\":\"Days\",\"bossOfDepartments\":[111248],\"endDate\":null,\"departmentName\":\"DevOps\",\"gravatar\":\"\",\"allowanceRemaining\":21.50,\"hasLoggedOn\":true,\"isArchived\":false,\"approverId\":0,\"deptBossId\":425954,\"birthday\":\"2010-12-01T00:00:00\",\"startDate\":\"2016-11-01T00:00:00\",\"hasPublicHolidays\":true,\"userInitials\":\"DN\",\"countryCode\":\"GB\",\"currentYearAllowance\":20.00,\"nextYearAllowance\":30.00},{\"id\":425955,\"firstname\":\"Dr Junior\",\"surname\":\"Joe\",\"email\":\"dawitnida@dawitnida.com\",\"admin\":false,\"organisationId\":56093,\"departmentId\":111247,\"allowanceUnit\":\"Hours\",\"bossOfDepartments\":[111247],\"endDate\":null,\"departmentName\":\"Developers\",\"gravatar\":\"https://timetasticwebjobsuk.blob.core.windows.net/avatars/u425955.png?v=1\",\"allowanceRemaining\":73.50,\"hasLoggedOn\":false,\"isArchived\":false,\"approverId\":0,\"deptBossId\":425955,\"birthday\":\"2000-06-01T00:00:00\",\"startDate\":\"2018-08-01T00:00:00\",\"hasPublicHolidays\":true,\"userInitials\":\"DJ\",\"countryCode\":\"FI\",\"currentYearAllowance\":73.50,\"nextYearAllowance\":175.00},{\"id\":425958,\"firstname\":\"Info\",\"surname\":\"EtMDB\",\"email\":\"info@etmdb.com\",\"admin\":true,\"organisationId\":56093,\"departmentId\":111250,\"allowanceUnit\":\"Days\",\"bossOfDepartments\":[111250],\"endDate\":null,\"departmentName\":\"Sales \\u0026 Marketing\",\"gravatar\":\"https://timetasticwebjobsuk.blob.core.windows.net/avatars/u425958.png?v=1\",\"allowanceRemaining\":2.00,\"hasLoggedOn\":false,\"isArchived\":false,\"approverId\":0,\"deptBossId\":425958,\"birthday\":null,\"startDate\":\"2018-12-01T00:00:00\",\"hasPublicHolidays\":true,\"userInitials\":\"IE\",\"countryCode\":\"EE\",\"currentYearAllowance\":2.00,\"nextYearAllowance\":20.00},{\"id\":425963,\"firstname\":\"Rich\",\"surname\":\"Joe\",\"email\":\"rich@dawitnida.com\",\"admin\":false,\"organisationId\":56093,\"departmentId\":111253,\"allowanceUnit\":\"Days\",\"bossOfDepartments\":[111253],\"endDate\":null,\"departmentName\":\"Customer Success\",\"gravatar\":\"\",\"allowanceRemaining\":12.00,\"hasLoggedOn\":false,\"isArchived\":false,\"approverId\":425954,\"deptBossId\":425963,\"birthday\":null,\"startDate\":\"2018-08-08T00:00:00\",\"hasPublicHolidays\":true,\"userInitials\":\"RJ\",\"countryCode\":\"FI\",\"currentYearAllowance\":12.00,\"nextYearAllowance\":19.00},{\"id\":425956,\"firstname\":\"Senior Dude\",\"surname\":\"Mark\",\"email\":\"senior@gmail.com\",\"admin\":false,\"organisationId\":56093,\"departmentId\":111248,\"allowanceUnit\":\"Days\",\"bossOfDepartments\":[],\"endDate\":null,\"departmentName\":\"DevOps\",\"gravatar\":\"\",\"allowanceRemaining\":4.50,\"hasLoggedOn\":false,\"isArchived\":false,\"approverId\":0,\"deptBossId\":425954,\"birthday\":null,\"startDate\":\"2018-10-02T00:00:00\",\"hasPublicHolidays\":true,\"userInitials\":\"SM\",\"countryCode\":\"PL\",\"currentYearAllowance\":5.50,\"nextYearAllowance\":25.00}]"
+            }
+          ]
+        },
+        {
+          "name": "Get a collection of users with filter",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "type": "text",
+                "value": "Bearer {{devApiToken}}"
+              },
+              {
+                "key": "Accept",
+                "value": "text/plain, application/json, text/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/users?departmentId={{departmentId}}&onlyShowArchivedUsers={{onlyShowArchivedUsers}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "users"
+              ],
+              "query": [
+                {
+                  "key": "departmentId",
+                  "value": "{{departmentId}}"
+                },
+                {
+                  "key": "onlyShowArchivedUsers",
+                  "value": "{{onlyShowArchivedUsers}}"
+                }
+              ]
+            },
+            "description": "Get a collection of users for your organisation, optionally filtered by a department.\n\n```\n?departmentId={{departmentId}}&includeArchivedUsers={{includeArchivedUsers}}&onlyShowArchivedUsers={{onlyShowArchivedUsers}}\n```"
+          },
+          "response": [
+            {
+              "name": "Get a collection of users with filter",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "type": "text",
+                    "value": "Bearer {{devApiToken}}"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "text/plain, application/json, text/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/users?departmentId={{departmentId}}&onlyShowArchivedUsers={{onlyShowArchivedUsers}}",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "users"
+                  ],
+                  "query": [
+                    {
+                      "key": "departmentId",
+                      "value": "{{departmentId}}"
+                    },
+                    {
+                      "key": "onlyShowArchivedUsers",
+                      "value": "{{onlyShowArchivedUsers}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "JSON",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Thu, 27 Dec 2018 23:59:30 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "CF-RAY",
+                  "value": "48ffbdc71b055b5d-HEL"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self' gap:; connect-src *; frame-src 'self' gap: https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://widget.reviews.co.uk https://use.typekit.net https://*.linkedin.com https://platform.twitter.com https://www.linkedin.com https://js.stripe.com https://js-agent.newrelic.com https://bam.nr-data.net https://assets.customer.io https://www.google-analytics.com https://www.googleadservices.com https://az416426.vo.msecnd.net https://timetasticcore.azurewebsites.net https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com https://widget.reviews.co.uk; img-src * data: blob:; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://widget.reviews.co.uk https://use.typekit.net https://*.linkedin.com https://platform.twitter.com https://www.linkedin.com https://js.stripe.com https://js-agent.newrelic.com https://bam.nr-data.net https://assets.customer.io https://www.google-analytics.com https://www.googleadservices.com https://az416426.vo.msecnd.net https://timetasticcore.azurewebsites.net https://cdn.jsdelivr.net; font-src * data:"
+                },
+                {
+                  "key": "Expect-CT",
+                  "value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Request-Context",
+                  "value": "appId=cid-v1:2642d159-2ce2-40c9-af2b-3d0a875cb881"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "X-Rate-Limit-Limit",
+                  "value": "1s"
+                },
+                {
+                  "key": "X-Rate-Limit-Remaining",
+                  "value": "4"
+                },
+                {
+                  "key": "X-Rate-Limit-Reset",
+                  "value": "2018-12-27T23:59:31.4641625Z"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1"
+                },
+                {
+                  "key": "Server",
+                  "value": "cloudflare"
+                }
+              ],
+              "cookie": [],
+              "body": "[{\"id\":425954,\"firstname\":\"Dawit\",\"surname\":\"Nida\",\"email\":\"dawit@dawitnida.com\",\"admin\":true,\"organisationId\":56093,\"departmentId\":111248,\"allowanceUnit\":\"Days\",\"bossOfDepartments\":[111248],\"endDate\":null,\"departmentName\":\"DevOps\",\"gravatar\":\"\",\"allowanceRemaining\":21.50,\"hasLoggedOn\":true,\"isArchived\":false,\"approverId\":0,\"deptBossId\":425954,\"birthday\":\"2010-12-01T00:00:00\",\"startDate\":\"2016-11-01T00:00:00\",\"hasPublicHolidays\":true,\"userInitials\":\"DN\",\"countryCode\":\"GB\",\"currentYearAllowance\":20.00,\"nextYearAllowance\":30.00},{\"id\":425956,\"firstname\":\"Senior Dude\",\"surname\":\"Mark\",\"email\":\"senior@gmail.com\",\"admin\":false,\"organisationId\":56093,\"departmentId\":111248,\"allowanceUnit\":\"Days\",\"bossOfDepartments\":[],\"endDate\":null,\"departmentName\":\"DevOps\",\"gravatar\":\"\",\"allowanceRemaining\":4.50,\"hasLoggedOn\":false,\"isArchived\":false,\"approverId\":0,\"deptBossId\":425954,\"birthday\":null,\"startDate\":\"2018-10-02T00:00:00\",\"hasPublicHolidays\":true,\"userInitials\":\"SM\",\"countryCode\":\"PL\",\"currentYearAllowance\":5.50,\"nextYearAllowance\":25.00}]"
+            }
+          ]
+        },
+        {
+          "name": "Get a user",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{devApiToken}}",
+                "type": "text"
+              },
+              {
+                "key": "Accept",
+                "value": "text/plain, application/json, text/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/users/{{userId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "users",
+                "{{userId}}"
+              ]
+            },
+            "description": "Gets a user using the ID passed."
+          },
+          "response": [
+            {
+              "name": "Get a user",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{devApiToken}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "text/plain, application/json, text/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/users/{{userId}}",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "users",
+                    "{{userId}}"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "JSON",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Thu, 27 Dec 2018 23:58:03 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "CF-RAY",
+                  "value": "48ffbba9b8835b5d-HEL"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self' gap:; connect-src *; frame-src 'self' gap: https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://widget.reviews.co.uk https://use.typekit.net https://*.linkedin.com https://platform.twitter.com https://www.linkedin.com https://js.stripe.com https://js-agent.newrelic.com https://bam.nr-data.net https://assets.customer.io https://www.google-analytics.com https://www.googleadservices.com https://az416426.vo.msecnd.net https://timetasticcore.azurewebsites.net https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com https://widget.reviews.co.uk; img-src * data: blob:; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://widget.reviews.co.uk https://use.typekit.net https://*.linkedin.com https://platform.twitter.com https://www.linkedin.com https://js.stripe.com https://js-agent.newrelic.com https://bam.nr-data.net https://assets.customer.io https://www.google-analytics.com https://www.googleadservices.com https://az416426.vo.msecnd.net https://timetasticcore.azurewebsites.net https://cdn.jsdelivr.net; font-src * data:"
+                },
+                {
+                  "key": "Expect-CT",
+                  "value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Request-Context",
+                  "value": "appId=cid-v1:2642d159-2ce2-40c9-af2b-3d0a875cb881"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "X-Rate-Limit-Limit",
+                  "value": "1s"
+                },
+                {
+                  "key": "X-Rate-Limit-Remaining",
+                  "value": "4"
+                },
+                {
+                  "key": "X-Rate-Limit-Reset",
+                  "value": "2018-12-27T23:58:04.8215713Z"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1"
+                },
+                {
+                  "key": "Server",
+                  "value": "cloudflare"
+                }
+              ],
+              "cookie": [],
+              "body": "{\"workingDays\":[{\"dayOfWeek\":\"Monday\",\"fromTimeAm\":540,\"toTimeAm\":720,\"fromTimePm\":780,\"toTimePm\":1020,\"workingAm\":true,\"workingPm\":true},{\"dayOfWeek\":\"Tuesday\",\"fromTimeAm\":540,\"toTimeAm\":720,\"fromTimePm\":780,\"toTimePm\":1020,\"workingAm\":true,\"workingPm\":true},{\"dayOfWeek\":\"Wednesday\",\"fromTimeAm\":540,\"toTimeAm\":720,\"fromTimePm\":780,\"toTimePm\":1020,\"workingAm\":true,\"workingPm\":true},{\"dayOfWeek\":\"Thursday\",\"fromTimeAm\":540,\"toTimeAm\":720,\"fromTimePm\":780,\"toTimePm\":1020,\"workingAm\":true,\"workingPm\":true},{\"dayOfWeek\":\"Friday\",\"fromTimeAm\":540,\"toTimeAm\":720,\"fromTimePm\":780,\"toTimePm\":1020,\"workingAm\":true,\"workingPm\":true},{\"dayOfWeek\":\"Saturday\",\"fromTimeAm\":540,\"toTimeAm\":720,\"fromTimePm\":780,\"toTimePm\":1020,\"workingAm\":false,\"workingPm\":false},{\"dayOfWeek\":\"Sunday\",\"fromTimeAm\":540,\"toTimeAm\":720,\"fromTimePm\":780,\"toTimePm\":1020,\"workingAm\":false,\"workingPm\":false}],\"allowances\":[{\"year\":2017,\"allowance\":25.00,\"remaining\":25.00,\"used\":0.00},{\"year\":2018,\"allowance\":5.50,\"remaining\":4.50,\"used\":-1.00},{\"year\":2019,\"allowance\":25.00,\"remaining\":25.00,\"used\":0.00}],\"id\":425956,\"firstname\":\"Senior Dude\",\"surname\":\"Mark\",\"email\":\"senior@gmail.com\",\"admin\":false,\"organisationId\":56093,\"departmentId\":111248,\"allowanceUnit\":\"Days\",\"bossOfDepartments\":[],\"endDate\":null,\"departmentName\":\"DevOps\",\"gravatar\":\"\",\"allowanceRemaining\":4.50,\"hasLoggedOn\":false,\"isArchived\":false,\"approverId\":0,\"deptBossId\":425954,\"birthday\":null,\"startDate\":\"2018-10-02T00:00:00\",\"hasPublicHolidays\":true,\"userInitials\":\"SM\",\"countryCode\":\"PL\",\"currentYearAllowance\":5.50,\"nextYearAllowance\":25.00}"
+            }
+          ]
+        }
+      ],
+      "description": "Get a collection of users for your organisation, optionally filtered by a department.",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "d3c06c4e-fba0-4b21-9e3f-8a57e4138ad4",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "3e760f12-b950-49de-983a-42fd383edd5e",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Leave Types",
+      "item": [
+        {
+          "name": "Get a collection of leave types",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer  {{devApiToken}}",
+                "type": "text"
+              },
+              {
+                "key": "Accept",
+                "value": "text/plain, application/json, text/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/leavetypes",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "leavetypes"
+              ]
+            },
+            "description": "Get a list of leave types for your organisation."
+          },
+          "response": [
+            {
+              "name": "Get a collection of leave types",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer  {{devApiToken}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "text/plain, application/json, text/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/leavetypes",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "leavetypes"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "JSON",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 28 Dec 2018 00:00:09 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "CF-RAY",
+                  "value": "48ffbebd7ed45b5d-HEL"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self' gap:; connect-src *; frame-src 'self' gap: https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://widget.reviews.co.uk https://use.typekit.net https://*.linkedin.com https://platform.twitter.com https://www.linkedin.com https://js.stripe.com https://js-agent.newrelic.com https://bam.nr-data.net https://assets.customer.io https://www.google-analytics.com https://www.googleadservices.com https://az416426.vo.msecnd.net https://timetasticcore.azurewebsites.net https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com https://widget.reviews.co.uk; img-src * data: blob:; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://widget.reviews.co.uk https://use.typekit.net https://*.linkedin.com https://platform.twitter.com https://www.linkedin.com https://js.stripe.com https://js-agent.newrelic.com https://bam.nr-data.net https://assets.customer.io https://www.google-analytics.com https://www.googleadservices.com https://az416426.vo.msecnd.net https://timetasticcore.azurewebsites.net https://cdn.jsdelivr.net; font-src * data:"
+                },
+                {
+                  "key": "Expect-CT",
+                  "value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Request-Context",
+                  "value": "appId=cid-v1:2642d159-2ce2-40c9-af2b-3d0a875cb881"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "X-Rate-Limit-Limit",
+                  "value": "1s"
+                },
+                {
+                  "key": "X-Rate-Limit-Remaining",
+                  "value": "4"
+                },
+                {
+                  "key": "X-Rate-Limit-Reset",
+                  "value": "2018-12-28T00:00:10.8678878Z"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1"
+                },
+                {
+                  "key": "Server",
+                  "value": "cloudflare"
+                }
+              ],
+              "cookie": [],
+              "body": "[{\"id\":190769,\"name\":\"Holiday\",\"organisationId\":56093,\"deducted\":true,\"requiresApproval\":true,\"active\":true,\"createdAt\":\"2018-12-27T22:30:04\",\"updatedAt\":\"2018-12-27T22:30:04\",\"color\":\"#cc6699\"},{\"id\":190770,\"name\":\"Unpaid Leave\",\"organisationId\":56093,\"deducted\":false,\"requiresApproval\":true,\"active\":true,\"createdAt\":\"2018-12-27T22:30:04\",\"updatedAt\":\"2018-12-27T22:30:04\",\"color\":\"#339966\"},{\"id\":190771,\"name\":\"Sick Leave\",\"organisationId\":56093,\"deducted\":false,\"requiresApproval\":true,\"active\":true,\"createdAt\":\"2018-12-27T22:30:04\",\"updatedAt\":\"2018-12-27T22:30:04\",\"color\":\"#996666\"},{\"id\":190772,\"name\":\"Maternity\",\"organisationId\":56093,\"deducted\":false,\"requiresApproval\":true,\"active\":true,\"createdAt\":\"2018-12-27T22:30:04\",\"updatedAt\":\"2018-12-27T22:30:04\",\"color\":\"#66cc99\"},{\"id\":190773,\"name\":\"Paternity\",\"organisationId\":56093,\"deducted\":false,\"requiresApproval\":true,\"active\":true,\"createdAt\":\"2018-12-27T22:30:04\",\"updatedAt\":\"2018-12-27T22:30:04\",\"color\":\"#336699\"},{\"id\":190774,\"name\":\"Meeting\",\"organisationId\":56093,\"deducted\":false,\"requiresApproval\":true,\"active\":true,\"createdAt\":\"2018-12-27T22:30:04\",\"updatedAt\":\"2018-12-27T22:30:04\",\"color\":\"#ff9966\"},{\"id\":190775,\"name\":\"Compassionate\",\"organisationId\":56093,\"deducted\":false,\"requiresApproval\":true,\"active\":true,\"createdAt\":\"2018-12-27T22:30:04\",\"updatedAt\":\"2018-12-27T22:30:04\",\"color\":\"#cc9933\"},{\"id\":190797,\"name\":\"Company Treat\",\"organisationId\":56093,\"deducted\":true,\"requiresApproval\":true,\"active\":true,\"createdAt\":\"2018-12-27T23:48:34\",\"updatedAt\":\"2018-12-27T23:48:34\",\"color\":\"#ff6600\"}]"
+            }
+          ]
+        },
+        {
+          "name": "Get a leave type",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{devApiToken}}",
+                "type": "text"
+              },
+              {
+                "key": "Accept",
+                "value": "text/plain, application/json, text/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/leavetypes/{{leaveTypeId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "leavetypes",
+                "{{leaveTypeId}}"
+              ]
+            },
+            "description": "Gets a leave type using the ID passed."
+          },
+          "response": [
+            {
+              "name": "Get a leave type",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{devApiToken}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "text/plain, application/json, text/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/leavetypes/{{leaveTypeId}}",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "leavetypes",
+                    "{{leaveTypeId}}"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "JSON",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 28 Dec 2018 00:01:16 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "CF-RAY",
+                  "value": "48ffc05ed8355b5d-HEL"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self' gap:; connect-src *; frame-src 'self' gap: https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://widget.reviews.co.uk https://use.typekit.net https://*.linkedin.com https://platform.twitter.com https://www.linkedin.com https://js.stripe.com https://js-agent.newrelic.com https://bam.nr-data.net https://assets.customer.io https://www.google-analytics.com https://www.googleadservices.com https://az416426.vo.msecnd.net https://timetasticcore.azurewebsites.net https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com https://widget.reviews.co.uk; img-src * data: blob:; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://widget.reviews.co.uk https://use.typekit.net https://*.linkedin.com https://platform.twitter.com https://www.linkedin.com https://js.stripe.com https://js-agent.newrelic.com https://bam.nr-data.net https://assets.customer.io https://www.google-analytics.com https://www.googleadservices.com https://az416426.vo.msecnd.net https://timetasticcore.azurewebsites.net https://cdn.jsdelivr.net; font-src * data:"
+                },
+                {
+                  "key": "Expect-CT",
+                  "value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Request-Context",
+                  "value": "appId=cid-v1:2642d159-2ce2-40c9-af2b-3d0a875cb881"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "X-Rate-Limit-Limit",
+                  "value": "1s"
+                },
+                {
+                  "key": "X-Rate-Limit-Remaining",
+                  "value": "4"
+                },
+                {
+                  "key": "X-Rate-Limit-Reset",
+                  "value": "2018-12-28T00:01:17.6499037Z"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1"
+                },
+                {
+                  "key": "Server",
+                  "value": "cloudflare"
+                }
+              ],
+              "cookie": [],
+              "body": "{\"id\":190797,\"name\":\"Company Treat\",\"organisationId\":56093,\"deducted\":true,\"requiresApproval\":true,\"active\":true,\"createdAt\":\"2018-12-27T23:48:34\",\"updatedAt\":\"2018-12-27T23:48:34\",\"color\":\"#ff6600\"}"
+            }
+          ]
+        }
+      ],
+      "description": "Get a list of leave types for your organisation.",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "e3d2c856-2476-4ad3-8250-2b6090e6e5ae",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "09cb11f9-ce9e-4d1f-8f49-62ea1487255b",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Holidays",
+      "item": [
+        {
+          "name": "Get a holiday",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{devApiToken}}",
+                "type": "text"
+              },
+              {
+                "key": "Accept",
+                "value": "text/plain, application/json, text/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/holidays/:id?filter={{filter}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "holidays",
+                ":id"
+              ],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{holidayId}}"
+                }
+              ]
+            },
+            "description": "Gets a holiday using the ID passed."
+          },
+          "response": [
+            {
+              "name": "Get a holiday",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{devApiToken}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "text/plain, application/json, text/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/holidays/:id?filter={{filter}}",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "holidays",
+                    ":id"
+                  ],
+                  "query": [
+                    {
+                      "key": "filter",
+                      "value": "{{filter}}",
+                      "description": "Filter"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "key": "id",
+                      "value": "{{holidayId}}",
+                      "description": "Holiday ID"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "JSON",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 28 Dec 2018 00:02:47 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "CF-RAY",
+                  "value": "48ffc294e9055b5d-HEL"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self' gap:; connect-src *; frame-src 'self' gap: https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://widget.reviews.co.uk https://use.typekit.net https://*.linkedin.com https://platform.twitter.com https://www.linkedin.com https://js.stripe.com https://js-agent.newrelic.com https://bam.nr-data.net https://assets.customer.io https://www.google-analytics.com https://www.googleadservices.com https://az416426.vo.msecnd.net https://timetasticcore.azurewebsites.net https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com https://widget.reviews.co.uk; img-src * data: blob:; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://widget.reviews.co.uk https://use.typekit.net https://*.linkedin.com https://platform.twitter.com https://www.linkedin.com https://js.stripe.com https://js-agent.newrelic.com https://bam.nr-data.net https://assets.customer.io https://www.google-analytics.com https://www.googleadservices.com https://az416426.vo.msecnd.net https://timetasticcore.azurewebsites.net https://cdn.jsdelivr.net; font-src * data:"
+                },
+                {
+                  "key": "Expect-CT",
+                  "value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Request-Context",
+                  "value": "appId=cid-v1:2642d159-2ce2-40c9-af2b-3d0a875cb881"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "X-Rate-Limit-Limit",
+                  "value": "1s"
+                },
+                {
+                  "key": "X-Rate-Limit-Remaining",
+                  "value": "4"
+                },
+                {
+                  "key": "X-Rate-Limit-Reset",
+                  "value": "2018-12-28T00:02:48.2178498Z"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1"
+                },
+                {
+                  "key": "Server",
+                  "value": "cloudflare"
+                }
+              ],
+              "cookie": [],
+              "body": "{\"holidays\":[{\"id\":5586317,\"startDate\":\"2019-01-15T00:00:00\",\"startType\":\"Morning\",\"endDate\":\"2019-01-22T00:00:00\",\"endType\":\"Afternoon\",\"userId\":425954,\"userName\":\"Dawit Nida\",\"requestedById\":425954,\"leaveTypeId\":190772,\"duration\":8.00,\"deduction\":0.00,\"actionerId\":425954,\"createdAt\":\"2018-12-27T22:39:13\",\"updatedAt\":\"2018-12-27T22:39:13\",\"reason\":\"\",\"declineReason\":null,\"status\":\"Approved\",\"autoApproved\":true,\"bookingUnit\":\"Days\",\"leaveType\":\"Maternity\"},{\"id\":5586324,\"startDate\":\"2019-01-08T00:00:00\",\"startType\":\"Afternoon\",\"endDate\":\"2019-01-23T00:00:00\",\"endType\":\"Afternoon\",\"userId\":425958,\"userName\":\"Info EtMDB\",\"requestedById\":425954,\"leaveTypeId\":190773,\"duration\":15.50,\"deduction\":0.00,\"actionerId\":425954,\"createdAt\":\"2018-12-27T22:44:39\",\"updatedAt\":\"2018-12-27T22:44:39\",\"reason\":\"\",\"declineReason\":null,\"status\":\"Approved\",\"autoApproved\":true,\"bookingUnit\":\"Days\",\"leaveType\":\"Paternity\"},{\"id\":5586314,\"startDate\":\"2019-01-08T00:00:00\",\"startType\":\"Morning\",\"endDate\":\"2019-01-12T00:00:00\",\"endType\":\"Afternoon\",\"userId\":425956,\"userName\":\"Senior Dude Mark\",\"requestedById\":425954,\"leaveTypeId\":190775,\"duration\":5.00,\"deduction\":0.00,\"actionerId\":425954,\"createdAt\":\"2018-12-27T22:38:44\",\"updatedAt\":\"2018-12-27T22:38:44\",\"reason\":\"\",\"declineReason\":null,\"status\":\"Approved\",\"autoApproved\":true,\"bookingUnit\":\"Days\",\"leaveType\":\"Compassionate\"},{\"id\":5586319,\"startDate\":\"2019-01-03T00:00:00\",\"startType\":\"Afternoon\",\"endDate\":\"2019-01-03T00:00:00\",\"endType\":\"Afternoon\",\"userId\":425954,\"userName\":\"Dawit Nida\",\"requestedById\":425954,\"leaveTypeId\":190774,\"duration\":0.50,\"deduction\":0.00,\"actionerId\":425954,\"createdAt\":\"2018-12-27T22:41:28\",\"updatedAt\":\"2018-12-27T22:41:28\",\"reason\":\"\",\"declineReason\":null,\"status\":\"Approved\",\"autoApproved\":true,\"bookingUnit\":\"Days\",\"leaveType\":\"Meeting\"},{\"id\":5586315,\"startDate\":\"2018-12-31T00:00:00\",\"startType\":\"Morning\",\"endDate\":\"2018-12-31T00:00:00\",\"endType\":\"Morning\",\"userId\":425955,\"userName\":\"Dr Junior Joe\",\"requestedById\":425954,\"leaveTypeId\":190770,\"duration\":3.00,\"deduction\":0.00,\"actionerId\":425954,\"createdAt\":\"2018-12-27T22:38:54\",\"updatedAt\":\"2018-12-27T22:38:54\",\"reason\":\"\",\"declineReason\":null,\"status\":\"Approved\",\"autoApproved\":true,\"bookingUnit\":\"Days\",\"leaveType\":\"Unpaid Leave\"},{\"id\":5586313,\"startDate\":\"2018-12-31T00:00:00\",\"startType\":\"Morning\",\"endDate\":\"2018-12-31T00:00:00\",\"endType\":\"Afternoon\",\"userId\":425956,\"userName\":\"Senior Dude Mark\",\"requestedById\":425954,\"leaveTypeId\":190769,\"duration\":1.00,\"deduction\":1.00,\"actionerId\":425954,\"createdAt\":\"2018-12-27T22:38:26\",\"updatedAt\":\"2018-12-27T22:38:26\",\"reason\":\"Timeoff\",\"declineReason\":null,\"status\":\"Approved\",\"autoApproved\":true,\"bookingUnit\":\"Days\",\"leaveType\":\"Holiday\"}],\"totalRecords\":6,\"pageNumber\":1,\"nextPageLink\":\"\",\"previousPageLink\":\"\"}"
+            }
+          ]
+        },
+        {
+          "name": "Get a list of holidays",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{devApiToken}}",
+                "type": "text"
+              },
+              {
+                "key": "Accept",
+                "value": "text/plain, application/json, text/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/holidays?DepartmentId={{departmentId}}&UserIds={{userIds}}&ExclusionUserIds={{exclusionUserIds}}&NonArchivedUsersOnly={{nonArchivedUsersOnly}}&Start={{start}}&End={{end}}&Status={{status}}&ApproverId={{approverId}}&PageNumber={{pageNumber}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "holidays"
+              ],
+              "query": [
+                {
+                  "key": "DepartmentId",
+                  "value": "{{departmentId}}"
+                },
+                {
+                  "key": "UserIds",
+                  "value": "{{userIds}}"
+                },
+                {
+                  "key": "ExclusionUserIds",
+                  "value": "{{exclusionUserIds}}"
+                },
+                {
+                  "key": "NonArchivedUsersOnly",
+                  "value": "{{nonArchivedUsersOnly}}"
+                },
+                {
+                  "key": "Start",
+                  "value": "{{start}}"
+                },
+                {
+                  "key": "End",
+                  "value": "{{end}}"
+                },
+                {
+                  "key": "Status",
+                  "value": "{{status}}"
+                },
+                {
+                  "key": "ApproverId",
+                  "value": "{{approverId}}"
+                },
+                {
+                  "key": "PageNumber",
+                  "value": "{{pageNumber}}"
+                }
+              ]
+            },
+            "description": "Results are limited to 100 per request\r\nQuery the holidays for your organisation.\r\nThere are many ways to filter the results, all of which are optional."
+          },
+          "response": [
+            {
+              "name": "Get a list of holidays",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{devApiToken}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "text/plain, application/json, text/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/holidays?DepartmentId={{departmentId}}&UserIds={{userIds}}&ExclusionUserIds={{exclusionUserIds}}&NonArchivedUsersOnly={{nonArchivedUsersOnly}}&Start={{start}}&End={{end}}&Status={{status}}&ApproverId={{approverId}}&PageNumber={{pageNumber}}",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "holidays"
+                  ],
+                  "query": [
+                    {
+                      "key": "DepartmentId",
+                      "value": "{{departmentId}}"
+                    },
+                    {
+                      "key": "UserIds",
+                      "value": "{{userIds}}"
+                    },
+                    {
+                      "key": "ExclusionUserIds",
+                      "value": "{{exclusionUserIds}}"
+                    },
+                    {
+                      "key": "NonArchivedUsersOnly",
+                      "value": "{{nonArchivedUsersOnly}}"
+                    },
+                    {
+                      "key": "Start",
+                      "value": "{{start}}"
+                    },
+                    {
+                      "key": "End",
+                      "value": "{{end}}"
+                    },
+                    {
+                      "key": "Status",
+                      "value": "{{status}}"
+                    },
+                    {
+                      "key": "ApproverId",
+                      "value": "{{approverId}}"
+                    },
+                    {
+                      "key": "PageNumber",
+                      "value": "{{pageNumber}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "JSON",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 28 Dec 2018 00:07:38 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "CF-RAY",
+                  "value": "48ffc9af9d1a5b5d-HEL"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self' gap:; connect-src *; frame-src 'self' gap: https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://widget.reviews.co.uk https://use.typekit.net https://*.linkedin.com https://platform.twitter.com https://www.linkedin.com https://js.stripe.com https://js-agent.newrelic.com https://bam.nr-data.net https://assets.customer.io https://www.google-analytics.com https://www.googleadservices.com https://az416426.vo.msecnd.net https://timetasticcore.azurewebsites.net https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com https://widget.reviews.co.uk; img-src * data: blob:; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://widget.reviews.co.uk https://use.typekit.net https://*.linkedin.com https://platform.twitter.com https://www.linkedin.com https://js.stripe.com https://js-agent.newrelic.com https://bam.nr-data.net https://assets.customer.io https://www.google-analytics.com https://www.googleadservices.com https://az416426.vo.msecnd.net https://timetasticcore.azurewebsites.net https://cdn.jsdelivr.net; font-src * data:"
+                },
+                {
+                  "key": "Expect-CT",
+                  "value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Request-Context",
+                  "value": "appId=cid-v1:2642d159-2ce2-40c9-af2b-3d0a875cb881"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "X-Rate-Limit-Limit",
+                  "value": "1s"
+                },
+                {
+                  "key": "X-Rate-Limit-Remaining",
+                  "value": "4"
+                },
+                {
+                  "key": "X-Rate-Limit-Reset",
+                  "value": "2018-12-28T00:07:39.2238978Z"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1"
+                },
+                {
+                  "key": "Server",
+                  "value": "cloudflare"
+                }
+              ],
+              "cookie": [],
+              "body": "{\"holidays\":[{\"id\":5586317,\"startDate\":\"2019-01-15T00:00:00\",\"startType\":\"Morning\",\"endDate\":\"2019-01-22T00:00:00\",\"endType\":\"Afternoon\",\"userId\":425954,\"userName\":\"Dawit Nida\",\"requestedById\":425954,\"leaveTypeId\":190772,\"duration\":8.00,\"deduction\":0.00,\"actionerId\":425954,\"createdAt\":\"2018-12-27T22:39:13\",\"updatedAt\":\"2018-12-27T22:39:13\",\"reason\":\"\",\"declineReason\":null,\"status\":\"Approved\",\"autoApproved\":true,\"bookingUnit\":\"Days\",\"leaveType\":\"Maternity\"},{\"id\":5586314,\"startDate\":\"2019-01-08T00:00:00\",\"startType\":\"Morning\",\"endDate\":\"2019-01-12T00:00:00\",\"endType\":\"Afternoon\",\"userId\":425956,\"userName\":\"Senior Dude Mark\",\"requestedById\":425954,\"leaveTypeId\":190775,\"duration\":5.00,\"deduction\":0.00,\"actionerId\":425954,\"createdAt\":\"2018-12-27T22:38:44\",\"updatedAt\":\"2018-12-27T22:38:44\",\"reason\":\"\",\"declineReason\":null,\"status\":\"Approved\",\"autoApproved\":true,\"bookingUnit\":\"Days\",\"leaveType\":\"Compassionate\"},{\"id\":5586319,\"startDate\":\"2019-01-03T00:00:00\",\"startType\":\"Afternoon\",\"endDate\":\"2019-01-03T00:00:00\",\"endType\":\"Afternoon\",\"userId\":425954,\"userName\":\"Dawit Nida\",\"requestedById\":425954,\"leaveTypeId\":190774,\"duration\":0.50,\"deduction\":0.00,\"actionerId\":425954,\"createdAt\":\"2018-12-27T22:41:28\",\"updatedAt\":\"2018-12-27T22:41:28\",\"reason\":\"\",\"declineReason\":null,\"status\":\"Approved\",\"autoApproved\":true,\"bookingUnit\":\"Days\",\"leaveType\":\"Meeting\"},{\"id\":5586313,\"startDate\":\"2018-12-31T00:00:00\",\"startType\":\"Morning\",\"endDate\":\"2018-12-31T00:00:00\",\"endType\":\"Afternoon\",\"userId\":425956,\"userName\":\"Senior Dude Mark\",\"requestedById\":425954,\"leaveTypeId\":190769,\"duration\":1.00,\"deduction\":1.00,\"actionerId\":425954,\"createdAt\":\"2018-12-27T22:38:26\",\"updatedAt\":\"2018-12-27T22:38:26\",\"reason\":\"Timeoff\",\"declineReason\":null,\"status\":\"Approved\",\"autoApproved\":true,\"bookingUnit\":\"Days\",\"leaveType\":\"Holiday\"}],\"totalRecords\":4,\"pageNumber\":1,\"nextPageLink\":\"\",\"previousPageLink\":\"\"}"
+            }
+          ]
+        },
+        {
+          "name": "Update a holiday request",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{devApiToken}}",
+                "type": "text"
+              },
+              {
+                "key": "Accept",
+                "value": "text/plain, application/json, text/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json-patch+json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "options for reasons and suppressing notifications"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/holidays/:id?holidayUpdateAction={{holidayUpdateAction}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "holidays",
+                ":id"
+              ],
+              "query": [
+                {
+                  "key": "holidayUpdateAction",
+                  "value": "{{holidayUpdateAction}}"
+                }
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{holidayId}}"
+                }
+              ]
+            },
+            "description": "Update a holiday. You can use this to :\r\n1) Approve a pending holiday\r\n2) Decline a pending holiday\r\n3) Cancel a holiday"
+          },
+          "response": [
+            {
+              "name": "Update a holiday Invalid request",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{devApiToken}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "text/plain, application/json, text/json"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json-patch+json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "options for reasons and suppressing notifications"
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/holidays/:id?holidayUpdateAction={{holidayUpdateAction}}",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "holidays",
+                    ":id"
+                  ],
+                  "query": [
+                    {
+                      "key": "holidayUpdateAction",
+                      "value": "{{holidayUpdateAction}}"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "key": "id",
+                      "value": "{{holidayId}}"
+                    }
+                  ]
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "JSON",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 28 Dec 2018 00:04:07 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain; charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "CF-RAY",
+                  "value": "48ffc48cbf025b5d-HEL"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self' gap:; connect-src *; frame-src 'self' gap: https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://widget.reviews.co.uk https://use.typekit.net https://*.linkedin.com https://platform.twitter.com https://www.linkedin.com https://js.stripe.com https://js-agent.newrelic.com https://bam.nr-data.net https://assets.customer.io https://www.google-analytics.com https://www.googleadservices.com https://az416426.vo.msecnd.net https://timetasticcore.azurewebsites.net https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com https://widget.reviews.co.uk; img-src * data: blob:; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://widget.reviews.co.uk https://use.typekit.net https://*.linkedin.com https://platform.twitter.com https://www.linkedin.com https://js.stripe.com https://js-agent.newrelic.com https://bam.nr-data.net https://assets.customer.io https://www.google-analytics.com https://www.googleadservices.com https://az416426.vo.msecnd.net https://timetasticcore.azurewebsites.net https://cdn.jsdelivr.net; font-src * data:"
+                },
+                {
+                  "key": "Expect-CT",
+                  "value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Request-Context",
+                  "value": "appId=cid-v1:2642d159-2ce2-40c9-af2b-3d0a875cb881"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "X-Rate-Limit-Limit",
+                  "value": "1s"
+                },
+                {
+                  "key": "X-Rate-Limit-Remaining",
+                  "value": "4"
+                },
+                {
+                  "key": "X-Rate-Limit-Reset",
+                  "value": "2018-12-28T00:04:08.8261860Z"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "Server",
+                  "value": "cloudflare"
+                }
+              ],
+              "cookie": [],
+              "body": "Invalid holiday request arguments"
+            }
+          ]
+        },
+        {
+          "name": "Request a holiday",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/plain, application/json, text/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json-patch+json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{devApiToken}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/holidays",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "holidays"
+              ]
+            },
+            "description": "Use this to submit a leave request to Timetastic. Depending on your authorisation, you can book for yourself, any other user at your organisation, your department, or the entire organisation."
+          },
+          "response": [
+            {
+              "name": "Request an invalid holiday",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/plain, application/json, text/json"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json-patch+json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{devApiToken}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/holidays",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "holidays"
+                  ]
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "JSON",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 28 Dec 2018 00:08:23 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain; charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "CF-RAY",
+                  "value": "48ffcaccbd045b5d-HEL"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self' gap:; connect-src *; frame-src 'self' gap: https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://widget.reviews.co.uk https://use.typekit.net https://*.linkedin.com https://platform.twitter.com https://www.linkedin.com https://js.stripe.com https://js-agent.newrelic.com https://bam.nr-data.net https://assets.customer.io https://www.google-analytics.com https://www.googleadservices.com https://az416426.vo.msecnd.net https://timetasticcore.azurewebsites.net https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com https://widget.reviews.co.uk; img-src * data: blob:; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://widget.reviews.co.uk https://use.typekit.net https://*.linkedin.com https://platform.twitter.com https://www.linkedin.com https://js.stripe.com https://js-agent.newrelic.com https://bam.nr-data.net https://assets.customer.io https://www.google-analytics.com https://www.googleadservices.com https://az416426.vo.msecnd.net https://timetasticcore.azurewebsites.net https://cdn.jsdelivr.net; font-src * data:"
+                },
+                {
+                  "key": "Expect-CT",
+                  "value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Request-Context",
+                  "value": "appId=cid-v1:2642d159-2ce2-40c9-af2b-3d0a875cb881"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "X-Rate-Limit-Limit",
+                  "value": "1s"
+                },
+                {
+                  "key": "X-Rate-Limit-Remaining",
+                  "value": "4"
+                },
+                {
+                  "key": "X-Rate-Limit-Reset",
+                  "value": "2018-12-28T00:08:24.8304355Z"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "Server",
+                  "value": "cloudflare"
+                }
+              ],
+              "cookie": [],
+              "body": "Invalid holiday request arguments"
+            }
+          ]
+        }
+      ],
+      "description": "Query the holidays for your organisation. There are many ways to filter the results, all of which are optional."
+    },
+    {
+      "name": "Public Holidays",
+      "item": [
+        {
+          "name": "Get a list of public holidays",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{devApiToken}}",
+                "type": "text"
+              },
+              {
+                "key": "Accept",
+                "value": "text/plain, application/json, text/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/publicholidays?countryCode={{countryCode}}&year={{year}}&bankHolidaySetId={{bankHolidaySetId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "publicholidays"
+              ],
+              "query": [
+                {
+                  "key": "countryCode",
+                  "value": "{{countryCode}}"
+                },
+                {
+                  "key": "year",
+                  "value": "{{year}}"
+                },
+                {
+                  "key": "bankHolidaySetId",
+                  "value": "{{bankHolidaySetId}}"
+                }
+              ]
+            },
+            "description": "Get a collection of public holidays for your organisation."
+          },
+          "response": [
+            {
+              "name": "Get a list of public holidays",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{devApiToken}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "text/plain, application/json, text/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/publicholidays?countryCode={{countryCode}}&year={{year}}",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "publicholidays"
+                  ],
+                  "query": [
+                    {
+                      "key": "countryCode",
+                      "value": "{{countryCode}}"
+                    },
+                    {
+                      "key": "year",
+                      "value": "{{year}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 28 Dec 2018 00:13:38 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "CF-RAY",
+                  "value": "48ffd27cc8935b5d-HEL"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self' gap:; connect-src *; frame-src 'self' gap: https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://widget.reviews.co.uk https://use.typekit.net https://*.linkedin.com https://platform.twitter.com https://www.linkedin.com https://js.stripe.com https://js-agent.newrelic.com https://bam.nr-data.net https://assets.customer.io https://www.google-analytics.com https://www.googleadservices.com https://az416426.vo.msecnd.net https://timetasticcore.azurewebsites.net https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com https://widget.reviews.co.uk; img-src * data: blob:; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://widget.reviews.co.uk https://use.typekit.net https://*.linkedin.com https://platform.twitter.com https://www.linkedin.com https://js.stripe.com https://js-agent.newrelic.com https://bam.nr-data.net https://assets.customer.io https://www.google-analytics.com https://www.googleadservices.com https://az416426.vo.msecnd.net https://timetasticcore.azurewebsites.net https://cdn.jsdelivr.net; font-src * data:"
+                },
+                {
+                  "key": "Expect-CT",
+                  "value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Request-Context",
+                  "value": "appId=cid-v1:2642d159-2ce2-40c9-af2b-3d0a875cb881"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "X-Rate-Limit-Limit",
+                  "value": "1s"
+                },
+                {
+                  "key": "X-Rate-Limit-Remaining",
+                  "value": "4"
+                },
+                {
+                  "key": "X-Rate-Limit-Reset",
+                  "value": "2018-12-28T00:13:39.7168567Z"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1"
+                },
+                {
+                  "key": "Server",
+                  "value": "cloudflare"
+                }
+              ],
+              "cookie": [],
+              "body": "[\n    {\n        \"id\": 10787548,\n        \"name\": \"Uudenvuodenpäivä\",\n        \"date\": \"2019-01-01T00:00:00\",\n        \"organisationId\": 56093,\n        \"createdAt\": \"2018-12-27T22:30:04\",\n        \"updatedAt\": \"2018-12-27T22:30:04\",\n        \"countryCode\": \"FI\",\n        \"bankHolidaySetId\": 25372\n    },\n    {\n        \"id\": 10787549,\n        \"name\": \"Loppiainen\",\n        \"date\": \"2019-01-06T00:00:00\",\n        \"organisationId\": 56093,\n        \"createdAt\": \"2018-12-27T22:30:04\",\n        \"updatedAt\": \"2018-12-27T22:30:04\",\n        \"countryCode\": \"FI\",\n        \"bankHolidaySetId\": 25372\n    },\n    {\n        \"id\": 10787550,\n        \"name\": \"Pitkäperjantai\",\n        \"date\": \"2019-04-19T00:00:00\",\n        \"organisationId\": 56093,\n        \"createdAt\": \"2018-12-27T22:30:04\",\n        \"updatedAt\": \"2018-12-27T22:30:04\",\n        \"countryCode\": \"FI\",\n        \"bankHolidaySetId\": 25372\n    },\n    {\n        \"id\": 10787551,\n        \"name\": \"Pääsiäispäivä\",\n        \"date\": \"2019-04-21T00:00:00\",\n        \"organisationId\": 56093,\n        \"createdAt\": \"2018-12-27T22:30:04\",\n        \"updatedAt\": \"2018-12-27T22:30:04\",\n        \"countryCode\": \"FI\",\n        \"bankHolidaySetId\": 25372\n    },\n    {\n        \"id\": 10787552,\n        \"name\": \"2. pääsiäispäivä\",\n        \"date\": \"2019-04-22T00:00:00\",\n        \"organisationId\": 56093,\n        \"createdAt\": \"2018-12-27T22:30:04\",\n        \"updatedAt\": \"2018-12-27T22:30:04\",\n        \"countryCode\": \"FI\",\n        \"bankHolidaySetId\": 25372\n    },\n    {\n        \"id\": 10787553,\n        \"name\": \"Vappu\",\n        \"date\": \"2019-05-01T00:00:00\",\n        \"organisationId\": 56093,\n        \"createdAt\": \"2018-12-27T22:30:04\",\n        \"updatedAt\": \"2018-12-27T22:30:04\",\n        \"countryCode\": \"FI\",\n        \"bankHolidaySetId\": 25372\n    },\n    {\n        \"id\": 10787554,\n        \"name\": \"Helatorstai\",\n        \"date\": \"2019-05-30T00:00:00\",\n        \"organisationId\": 56093,\n        \"createdAt\": \"2018-12-27T22:30:04\",\n        \"updatedAt\": \"2018-12-27T22:30:04\",\n        \"countryCode\": \"FI\",\n        \"bankHolidaySetId\": 25372\n    },\n    {\n        \"id\": 10787555,\n        \"name\": \"Helluntaipäivä\",\n        \"date\": \"2019-06-09T00:00:00\",\n        \"organisationId\": 56093,\n        \"createdAt\": \"2018-12-27T22:30:04\",\n        \"updatedAt\": \"2018-12-27T22:30:04\",\n        \"countryCode\": \"FI\",\n        \"bankHolidaySetId\": 25372\n    },\n    {\n        \"id\": 10787556,\n        \"name\": \"Juhannusaatto\",\n        \"date\": \"2019-06-21T00:00:00\",\n        \"organisationId\": 56093,\n        \"createdAt\": \"2018-12-27T22:30:04\",\n        \"updatedAt\": \"2018-12-27T22:30:04\",\n        \"countryCode\": \"FI\",\n        \"bankHolidaySetId\": 25372\n    },\n    {\n        \"id\": 10787557,\n        \"name\": \"Juhannuspäivä\",\n        \"date\": \"2019-06-22T00:00:00\",\n        \"organisationId\": 56093,\n        \"createdAt\": \"2018-12-27T22:30:04\",\n        \"updatedAt\": \"2018-12-27T22:30:04\",\n        \"countryCode\": \"FI\",\n        \"bankHolidaySetId\": 25372\n    },\n    {\n        \"id\": 10787558,\n        \"name\": \"Pyhäinpäivä\",\n        \"date\": \"2019-11-02T00:00:00\",\n        \"organisationId\": 56093,\n        \"createdAt\": \"2018-12-27T22:30:04\",\n        \"updatedAt\": \"2018-12-27T22:30:04\",\n        \"countryCode\": \"FI\",\n        \"bankHolidaySetId\": 25372\n    },\n    {\n        \"id\": 10787559,\n        \"name\": \"Itsenäisyyspäivä\",\n        \"date\": \"2019-12-06T00:00:00\",\n        \"organisationId\": 56093,\n        \"createdAt\": \"2018-12-27T22:30:04\",\n        \"updatedAt\": \"2018-12-27T22:30:04\",\n        \"countryCode\": \"FI\",\n        \"bankHolidaySetId\": 25372\n    },\n    {\n        \"id\": 10787560,\n        \"name\": \"Jouluaatto\",\n        \"date\": \"2019-12-24T00:00:00\",\n        \"organisationId\": 56093,\n        \"createdAt\": \"2018-12-27T22:30:04\",\n        \"updatedAt\": \"2018-12-27T22:30:04\",\n        \"countryCode\": \"FI\",\n        \"bankHolidaySetId\": 25372\n    },\n    {\n        \"id\": 10787561,\n        \"name\": \"Joulupäivä\",\n        \"date\": \"2019-12-25T00:00:00\",\n        \"organisationId\": 56093,\n        \"createdAt\": \"2018-12-27T22:30:04\",\n        \"updatedAt\": \"2018-12-27T22:30:04\",\n        \"countryCode\": \"FI\",\n        \"bankHolidaySetId\": 25372\n    },\n    {\n        \"id\": 10787562,\n        \"name\": \"2. joulupäivä\",\n        \"date\": \"2019-12-26T00:00:00\",\n        \"organisationId\": 56093,\n        \"createdAt\": \"2018-12-27T22:30:04\",\n        \"updatedAt\": \"2018-12-27T22:30:04\",\n        \"countryCode\": \"FI\",\n        \"bankHolidaySetId\": 25372\n    }\n]"
+            }
+          ]
+        },
+        {
+          "name": "Get a public holiday",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{devApiToken}}",
+                "type": "text"
+              },
+              {
+                "key": "Accept",
+                "value": "text/plain, application/json, text/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/publicholidays/:id",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "publicholidays",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{publicHolidayId}}"
+                }
+              ]
+            },
+            "description": "Gets a public holiday using the ID passed."
+          },
+          "response": [
+            {
+              "name": "Get a public holiday",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/plain, application/json, text/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{devApiToken}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/publicholidays/:id",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "publicholidays",
+                    ":id"
+                  ],
+                  "variable": [
+                    {
+                      "key": "id",
+                      "value": "{{publicHolidayId}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "JSON",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 28 Dec 2018 00:15:41 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "CF-RAY",
+                  "value": "48ffd57b0b305b5d-HEL"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self' gap:; connect-src *; frame-src 'self' gap: https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://widget.reviews.co.uk https://use.typekit.net https://*.linkedin.com https://platform.twitter.com https://www.linkedin.com https://js.stripe.com https://js-agent.newrelic.com https://bam.nr-data.net https://assets.customer.io https://www.google-analytics.com https://www.googleadservices.com https://az416426.vo.msecnd.net https://timetasticcore.azurewebsites.net https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com https://widget.reviews.co.uk; img-src * data: blob:; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://widget.reviews.co.uk https://use.typekit.net https://*.linkedin.com https://platform.twitter.com https://www.linkedin.com https://js.stripe.com https://js-agent.newrelic.com https://bam.nr-data.net https://assets.customer.io https://www.google-analytics.com https://www.googleadservices.com https://az416426.vo.msecnd.net https://timetasticcore.azurewebsites.net https://cdn.jsdelivr.net; font-src * data:"
+                },
+                {
+                  "key": "Expect-CT",
+                  "value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Request-Context",
+                  "value": "appId=cid-v1:2642d159-2ce2-40c9-af2b-3d0a875cb881"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "X-Rate-Limit-Limit",
+                  "value": "1s"
+                },
+                {
+                  "key": "X-Rate-Limit-Remaining",
+                  "value": "4"
+                },
+                {
+                  "key": "X-Rate-Limit-Reset",
+                  "value": "2018-12-28T00:15:42.4163449Z"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1"
+                },
+                {
+                  "key": "Server",
+                  "value": "cloudflare"
+                }
+              ],
+              "cookie": [],
+              "body": "{\"id\":10787548,\"name\":\"Uudenvuodenpäivä\",\"date\":\"2019-01-01T00:00:00\",\"organisationId\":56093,\"createdAt\":\"2018-12-27T22:30:04\",\"updatedAt\":\"2018-12-27T22:30:04\",\"countryCode\":\"FI\",\"bankHolidaySetId\":25372}"
+            }
+          ]
+        }
+      ],
+      "description": "Get a collection of public holidays for your organisation."
+    }
+  ]
+}
