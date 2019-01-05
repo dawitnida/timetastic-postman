@@ -17,7 +17,6 @@ Please follow this tutorial to import this [Postman Collection][pm-collection].
     - Organisation
 - [x] Add environment variables
 - [x] Test and save response examples to the collection
-    - Organisation endpoint seems to be broken. [Timetastic][timetastic] please check.
 
 ## TODOs
 - [ ] Split endpoints which have filters

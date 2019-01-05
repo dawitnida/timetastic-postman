@@ -6,76 +6,6 @@
   },
   "item": [
     {
-      "name": "Organisation",
-      "item": [
-        {
-          "name": "Get an organisation",
-          "request": {
-            "method": "GET",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer  {{devApiToken}}",
-                "type": "text"
-              },
-              {
-                "key": "Accept",
-                "value": "application/json"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
-            "url": {
-              "raw": "{{baseUrl}}/api/organisation",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "api",
-                "organisation"
-              ]
-            },
-            "description": "Get the details of your organisation."
-          },
-          "response": []
-        },
-        {
-          "name": "Update an organisation",
-          "request": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{devApiToken}}",
-                "type": "text"
-              },
-              {
-                "key": "Content-Type",
-                "value": "application/json-patch+json"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
-            "url": {
-              "raw": "{{baseUrl}}/api/organisation",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "api",
-                "organisation"
-              ]
-            }
-          },
-          "response": []
-        }
-      ]
-    },
-    {
       "name": "Departments",
       "item": [
         {
@@ -1380,6 +1310,19 @@
         },
         {
           "name": "Get a list of holidays",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "73d6d7a9-0561-4eac-b6ee-3e5474a99f14",
+                "exec": [
+                  "var body = JSON.parse(responseBody);",
+                  "tests[\"Count: \"  + body.length] = true;"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
           "request": {
             "method": "GET",
             "header": [
@@ -1651,6 +1594,137 @@
             "description": "Update a holiday. You can use this to :\r\n1) Approve a pending holiday\r\n2) Decline a pending holiday\r\n3) Cancel a holiday"
           },
           "response": [
+            {
+              "name": "Update a holiday request",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{devApiToken}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "text/plain, application/json, text/json"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json-patch+json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "options for reasons and suppressing notifications"
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/holidays/:id?holidayUpdateAction={{holidayUpdateAction}}",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "holidays",
+                    ":id"
+                  ],
+                  "query": [
+                    {
+                      "key": "holidayUpdateAction",
+                      "value": "{{holidayUpdateAction}}"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "key": "id",
+                      "value": "{{holidayId}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "JSON",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 28 Dec 2018 00:50:07 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "CF-RAY",
+                  "value": "490007ecaebe5b8d-HEL"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self' gap:; connect-src *; frame-src 'self' gap: https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://widget.reviews.co.uk https://use.typekit.net https://*.linkedin.com https://platform.twitter.com https://www.linkedin.com https://js.stripe.com https://js-agent.newrelic.com https://bam.nr-data.net https://assets.customer.io https://www.google-analytics.com https://www.googleadservices.com https://az416426.vo.msecnd.net https://timetasticcore.azurewebsites.net https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com https://widget.reviews.co.uk; img-src * data: blob:; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://widget.reviews.co.uk https://use.typekit.net https://*.linkedin.com https://platform.twitter.com https://www.linkedin.com https://js.stripe.com https://js-agent.newrelic.com https://bam.nr-data.net https://assets.customer.io https://www.google-analytics.com https://www.googleadservices.com https://az416426.vo.msecnd.net https://timetasticcore.azurewebsites.net https://cdn.jsdelivr.net; font-src * data:"
+                },
+                {
+                  "key": "Expect-CT",
+                  "value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Request-Context",
+                  "value": "appId=cid-v1:2642d159-2ce2-40c9-af2b-3d0a875cb881"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "X-Rate-Limit-Limit",
+                  "value": "1s"
+                },
+                {
+                  "key": "X-Rate-Limit-Remaining",
+                  "value": "4"
+                },
+                {
+                  "key": "X-Rate-Limit-Reset",
+                  "value": "2018-12-28T00:50:08.4990973Z"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1"
+                },
+                {
+                  "key": "Server",
+                  "value": "cloudflare"
+                }
+              ],
+              "cookie": [],
+              "body": "{\"approvalResult\":\"AlreadyActioned\",\"message\":\"Already actioned\"}"
+            },
             {
               "name": "Update a holiday Invalid request",
               "originalRequest": {
@@ -1940,6 +2014,19 @@
       "item": [
         {
           "name": "Get a list of public holidays",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "9e79f427-e118-4136-b5f4-38a4ed9a2557",
+                "exec": [
+                  "var body = JSON.parse(responseBody);",
+                  "tests[\"Count: \"  + body.length] = true;"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
           "request": {
             "method": "GET",
             "header": [
@@ -1969,15 +2056,18 @@
               "query": [
                 {
                   "key": "countryCode",
-                  "value": "{{countryCode}}"
+                  "value": "{{countryCode}}",
+                  "description": "Country code"
                 },
                 {
                   "key": "year",
-                  "value": "{{year}}"
+                  "value": "{{year}}",
+                  "description": "Year"
                 },
                 {
                   "key": "bankHolidaySetId",
-                  "value": "{{bankHolidaySetId}}"
+                  "value": "{{bankHolidaySetId}}",
+                  "description": "Bank holiday ID"
                 }
               ]
             },
