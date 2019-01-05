@@ -14,7 +14,6 @@ Please follow this tutorial to import this [Postman Collection][pm-collection].
     - Holidays
     - Public holidays
     - Leave types and 
-    - Organisation
 - [x] Add environment variables
 - [x] Test and save response examples to the collection
 
